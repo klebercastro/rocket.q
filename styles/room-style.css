@@ -109,7 +109,7 @@
 
 .question-wrapper .question-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
 }
 .question-wrapper .question-content > .user {
@@ -135,6 +135,13 @@
 }
 .question-wrapper .actions a > img {
     margin-right: .8rem;
+}
+.question-wrapper .question-content .question > p {
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+    min-height: 5.2rem;
+
 }
 
 /* ========== Question Read ========== */
