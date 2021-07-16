@@ -12,6 +12,7 @@
     --grey-dark: #4D5E77;
     --grey-blue: #A1B2CD;
     --grey-light: #E5EAF1;
+    --grey-medium: #EAECF2;
     --icons-details: #A5B0C1
 }
 
@@ -95,6 +96,17 @@ button.outline,
 
     border: 2px solid var(--blue);
 }
+
+button.red, .button.red {
+    background: var(--red);
+    color: var(--white);
+}
+button.grey, .button.grey {
+    background: var(--grey-light);
+    color: var(--grey-dark);
+}
+
+/* ========== Header =========== */
 
 .content header {
     width: 80%;
