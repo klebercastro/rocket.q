@@ -1,7 +1,7 @@
 {
   "name": "rocket.q",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeton desenvolvido na semana NWL Rocketseat na missão Discorver",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,14 +11,10 @@
     "url": "git+https://github.com/klebercastro/rocket.q.git"
   },
   "keywords": [],
-  "author": "Kleber Castro",
+  "author": "Kleber Castro ",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/klebercastro/rocket.q/issues"
   },
-  "homepage": "https://github.com/klebercastro/rocket.q#readme",
-  "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.1"
-  }
+  "homepage": "https://github.com/klebercastro/rocket.q#readme"
 }
