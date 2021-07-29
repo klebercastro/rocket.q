@@ -1,13 +1,8 @@
 {
   "name": "rocket.q",
   "version": "1.0.0",
-<<<<<<< HEAD
-  "description": "Projeton desenvolvido na semana NWL Rocketseat na missão Discorver",
-  "main": "index.js",
-=======
   "description": "Projeto desenvolvido na semana do NLW Rocketseat da trilha Discover",
   "main": "src/server.js",
->>>>>>> e475daeb3e0160366ebd9169143ba23f6de9a9c1
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ."
@@ -22,9 +17,6 @@
   "bugs": {
     "url": "https://github.com/klebercastro/rocket.q/issues"
   },
-<<<<<<< HEAD
-  "homepage": "https://github.com/klebercastro/rocket.q#readme"
-=======
   "homepage": "https://github.com/klebercastro/rocket.q#readme",
   "dependencies": {
     "ejs": "^3.1.6",
@@ -33,5 +25,4 @@
   "devDependencies": {
     "nodemon": "^2.0.12"
   }
->>>>>>> e475daeb3e0160366ebd9169143ba23f6de9a9c1
 }
