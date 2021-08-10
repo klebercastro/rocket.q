@@ -8,6 +8,8 @@ server.set('view engine', 'ejs');
 server.set('views', path.join(__dirname, 'views'));
 
 server.use(express.static('public'));
+server.use(express.urlencoded({extended: true}));
+
 server.use(route);
 
 server.listen(8080, () => console.log('Server started'));
