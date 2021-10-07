@@ -2,8 +2,8 @@ const Database = require("../database/config");
 
 module.exports = {
     async create(req, res) {
-        const db = await Database();
-        const pass = req.body.password;
+        const database = await Database();
+        const password = req.body.password;
         let roomId = [];
         let isRoom = true;
 
@@ -15,22 +15,28 @@ module.exports = {
             }
 
             // Check room number
-            const roomExistIds =  await db.all(`SELEC * FROM rooms `);
+            const roomExistIds =  await database.all(`SELECT id FROM rooms `);
             isRoom = roomExistIds.some(roomExistId => roomExistId === roomId); 
             if(!isRoom) {
                 // Insert room in the dabase
-                await db.run(`INSERT INTO rooms (
+                await database.run(`INSERT INTO rooms (
                     id,
-                    pass
+                    password
                 ) VALUES (
                     ${parseInt(roomId)},
-                    ${pass}
+                    '${password}'
                 )`);
 
-                await db.close();
-
-                res.redirect(`/room/${roomId}`);    
-            }    
+            }  
+              
         }
+        await database.close();
+
+        res.redirect(`/room/${roomId}`);   
+    },
+
+    open(req, res) {
+        const roomId = req.params.room
+        res.render("room", {roomId:roomId});
     }
 }
